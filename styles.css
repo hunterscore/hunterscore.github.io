@@ -391,6 +391,7 @@ ul { list-style: none; }
   display: block;
   object-fit: cover;
   object-position: center 20%;
+  border-radius: 50%;
 }
 
 
