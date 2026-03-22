@@ -419,14 +419,14 @@ me = <span class="cls">Engineer</span>()
         Semi-autonomous Navigation and Actuation for Pneumatic Pick-and-place Applications
       </p>
 
-      <img src="assets/snappa-main.jpg" alt="SNAPPA robot overview" class="project-detail-hero">
+      <img src="assets/snappa-demo.gif" alt="SNAPPA robot overview" class="project-detail-hero">
 
       <div class="project-detail-grid">
         <div>
           <h3>Overview</h3>
           <p>
             SNAPPA is a TurtleBot-based autonomous robot built around a Raspberry Pi and Arduino architecture.
-            It uses onboard vision for line following and target alignment, then actuates a pneumatic pickup
+            It uses onboard vision for line following and target alignment, then actuates a pneumatic picking
             system to complete object-handling tasks.
             
           </p>
@@ -434,9 +434,9 @@ me = <span class="cls">Engineer</span>()
           <h3>What I worked on</h3>
           <ul>
             <li>Implemented OpenCV-based line detection and target tracking</li>
-            <li>Developed PD heading control and wheel-speed control integration</li>
+            <li>Developed PD heading control and PID wheel-speed control</li>
             <li>Built Pi-side state machine logic for navigation and task sequencing</li>
-            <li>Integrated USB serial communication between the Pi and motor controller</li>
+            <li>Integrated USB serial communication between the Pi and arduino</li>
             <li>Tuned system behavior on hardware for line-loss recovery and stability</li>
           </ul>
 
@@ -448,8 +448,7 @@ me = <span class="cls">Engineer</span>()
         </div>
 
         <div class="project-detail-side">
-          <img src="assets/snappa-vision.jpg" alt="SNAPPA vision pipeline output">
-          <img src="assets/snappa-gripper.jpg" alt="Close-up of SNAPPA pneumatic pickup system">
+          <img src="assets/linefollowing_display.png" alt="SNAPPA vision Display for line following">
         </div>
       </div>
     </div>
