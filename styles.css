@@ -442,6 +442,13 @@ ul { list-style: none; }
   background: var(--bg-alt);
 }
 
+.project-bullets {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
 .projects-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
