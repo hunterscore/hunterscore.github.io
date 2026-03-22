@@ -449,6 +449,22 @@ ul { list-style: none; }
   gap: 0.5rem;
 }
 
+.project-bullets li {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  padding-left: 1.25rem;
+  position: relative;
+}
+
+.project-bullets li::before {
+  content: '▶';
+  position: absolute;
+  left: 0;
+  color: var(--accent);
+  font-size: 0.6rem;
+  top: 0.2em;
+}
+
 .projects-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
