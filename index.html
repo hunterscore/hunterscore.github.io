@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Hunter Adams – Engineering Student Portfolio" />
+  <title>Hunter Adams | Engineering Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ===== NAVIGATION ===== -->
+  <nav id="navbar" class="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">HS<span class="accent">.</span></a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+        <li><a href="assets/resume.pdf" class="btn btn-outline" target="_blank" rel="noopener">Résumé</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section id="hero" class="hero">
+    <div class="hero-content">
+      <p class="hero-greeting">Hi, my name is</p>
+      <h1 class="hero-name">Hunter Adams<span class="accent">.</span></h1>
+      <h2 class="hero-tagline">I build cool sh*t.</h2>
+      <p class="hero-description">
+        I'm a Mechatronics Engineering student passionate about embedded systems,
+        human-robotic interaction, sustainable transportation technology, and control systems.
+        Currently seeking internship and research opportunities.
+      </p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary">View My Work</a>
+        <a href="#contact" class="btn btn-outline">Get In Touch</a>
+      </div>
+    </div>
+    <div class="hero-art" aria-hidden="true">
+      <div class="code-block">
+        <div class="code-header">
+          <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+          <span class="code-filename">portfolio.py</span>
+        </div>
+        <pre class="code-body"><code><span class="kw">class</span> <span class="cls">Engineer</span>:
+    <span class="kw">def</span> <span class="fn">__init__</span>(self):
+        self.name    = <span class="str">"Hunter Adams"</span>
+        self.degree  = <span class="str">"Mechatronics Engineering"</span>
+        self.passion = [
+            <span class="str">"embedded systems"</span>,
+            <span class="str">"human-robotic interaction"</span>,
+            <span class="str">"sustainable transportation technology"</span>,
+            <span class="str">"control systems"</span>
+        ]
+        self.coffee  = <span class="num">float</span>(<span class="str">"inf"</span>)
+
+    <span class="kw">def</span> <span class="fn">greet</span>(self):
+        <span class="kw">return</span> <span class="str">"Let's build something!"</span>
+
+me = <span class="cls">Engineer</span>()
+<span class="fn">print</span>(me.greet())</code></pre>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section id="about" class="section about">
+    <div class="container">
+      <h2 class="section-title"><span class="accent">01.</span> About Me</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            Hello! I'm Hunter, I'm a third-year Mechatronics Engineering student at
+            the University of Waterloo. My journey into engineering started when I
+            built my first robot at 12, and since that day, I've been hooked on making
+            hardware and software work together seamlessly.
+          </p>
+          <p>
+            I enjoy tinkering with microcontrollers, and exploring how machine-learning
+            models can be deployed on resource-constrained devices. When I'm not coding,
+            you'll find me reading, tending to my cactuses, or reinventing the wheel.
+          </p>
+          <p>
+            Here are a few technologies I've been working with recently:
+          </p>
+          <ul class="tech-list">
+            <li>Python</li>
+            <li>C / C++</li>
+            <li>JavaScript (React)</li>
+            <li>OpenCV</li>
+            <li>Embedded Linux</li>
+            <li>ROS 2</li>
+          </ul>
+        </div>
+        <div class="about-image-wrapper">
+          <div class="about-image-frame">
+            <div class="about-avatar">
+              <img src="assets/IMG_4614.jpeg" alt="Portrait of Hunter Adams" class="project-photo">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS ===== -->
+  <section id="skills" class="section skills">
+    <div class="container">
+      <h2 class="section-title"><span class="accent">02.</span> Skills</h2>
+      <div class="skills-grid">
+
+        <div class="skill-card">
+          <div class="skill-icon">⚡</div>
+          <h3>Embedded Systems</h3>
+          <p>Bare-metal C/C++, RTOS, STM32, Arduino, Raspberry Pi, UART/SPI/I²C, PCB design.</p>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon">🕹️</div>
+          <h3>Robotics & Control</h3>
+          <p>ROS 2, Gazebo, SLAM, path planning, PID control, state estimation, CAN bus.</p>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon">💻</div>
+          <h3>Software Development</h3>
+          <p>Python, C++, JavaScript, React, Git, Agile methodologies, test-driven development.</p>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon">🔥</div>
+          <h3>Thermal Engineering</h3>
+          <p>Heat transfer, fluid dynamics, thermodynamic cycles, computational fluid dynamics.</p>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon">🔌</div>
+          <h3>Power Systems</h3>
+          <p>Battery management systems, power electronics, energy storage, electric vehicle technology.</p>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon">🔧</div>
+          <h3>Mechanical Design</h3>
+          <p>3D modeling, CAD design, finite element analysis, kinematic simulation.</p>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon">🤖</div>
+          <h3>Machine Learning</h3>
+          <p>PyTorch, TensorFlow Lite, scikit-learn, CNNs, model quantisation, edge inference.</p>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon">🧠</div>
+          <h3>Hardware Design</h3>
+          <p>VHDL, Verilog, FPGA prototyping, digital logic, Altium Designer, KiCad.</p>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon">🔬</div>
+          <h3>Research</h3>
+          <p>Literature review, experimental design, data analysis, academic writing.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS ===== -->
+  <section id="projects" class="section projects">
+    <div class="container">
+      <h2 class="section-title"><span class="accent">03.</span> Projects</h2>
+      <div class="projects-grid">
+
+        <article
+          class="project-card featured"
+          data-project="snappa"
+          aria-label="Open SNAPPA project details"
+        >
+          <div class="project-top">
+            <span class="project-label">Featured Project</span>
+            <div class="project-links">
+              <a href="#" aria-label="GitHub repository" class="icon-link" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              </a>
+              <a href="#" aria-label="Live demo" class="icon-link" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">SNAPPA - Semi-autonomous Navigation and Actuation for Pneumatic Pick-and-place Applications</h3>
+          <div class="project-description">
+            <p>
+              Autonomous mobile robot built with a Raspberry Pi and Arduino for vision-based line following, target alignment,
+              and object-handling tasks. Implemented a camera-based line detection pipeline, PD heading control, PID motor speed control,
+              USB serial communication, and a Raspberry Pi-side state machine to manage navigation and task execution.
+            </p>
+          </div>
+          <ul class="project-tags">
+            <li>Python</li>
+            <li>OpenCV</li>
+            <li>Raspberry Pi</li>
+            <li>Arduino</li>
+            <li>Controls</li>
+          </ul>
+        </article>
+
+        <article
+          class="project-card small"
+          data-project="tcbm"
+          aria-label="Open TCBM project details"
+        >
+          <div class="project-top">
+            <div class="folder-icon" aria-hidden="true">📁</div>
+            <div class="project-links">
+              <a href="#" aria-label="GitHub repository" class="icon-link" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">TCBM - Thermal Car Body Model</h3>
+          <p>
+            A Python simulation tool for predicting the thermal and electrical energy consumption
+            of a car body under various environmental conditions.
+          </p>
+          <ul class="project-tags">
+            <li>Thermal Modeling</li>
+            <li>Python</li>
+            <li>Simulation</li>
+          </ul>
+        </article>
+
+        <article
+          class="project-card small"
+          data-project="caliper"
+          aria-label="Open encoder caliper project details"
+        >
+          <div class="project-top">
+            <div class="folder-icon" aria-hidden="true">📁</div>
+            <div class="project-links">
+              <a href="#" aria-label="GitHub repository" class="icon-link" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              </a>
+              <a href="#" aria-label="Live demo" class="icon-link" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">Encoder Based Caliper Device</h3>
+          <p>
+            Designed and built a caliper-style measurement device integrating a 3D-printed rack-and-pinion
+            system with a rotary encoder to convert linear displacement into accurate digital measurements.
+          </p>
+          <ul class="project-tags">
+            <li>Embedded</li>
+            <li>CAD</li>
+            <li>Sensing</li>
+          </ul>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EXPERIENCE ===== -->
+  <section id="experience" class="section experience">
+    <div class="container">
+      <h2 class="section-title"><span class="accent">04.</span> Experience</h2>
+      <div class="timeline">
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h3 class="timeline-role">Software Engineering Intern</h3>
+              <span class="timeline-period">Sep 2025 – Dec 2025</span>
+            </div>
+            <p class="timeline-company">German Aerospace Center (DLR) · Stuttgart, Germany</p>
+            <ul class="timeline-bullets">
+              <li>Developed a Python simulation tool to calculate HVAC electrical energy requirements for battery-electric and hydrogen fuel cell rail vehicles.</li>
+              <li>Analyzed the impact of HVAC operating strategies on power consumption, battery life, and overall vehicle energy usage.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h3 class="timeline-role">Control Systems Engineering Intern</h3>
+              <span class="timeline-period">Jan 2025 – Apr 2025</span>
+            </div>
+            <p class="timeline-company">Zeton Inc. · Oakville, ON</p>
+            <ul class="timeline-bullets">
+              <li>Developed, configured, and implemented Distributed Control System (DCS) strategies across modular pilot plant projects.</li>
+              <li>Contributed to test plan development and execution, identifying bottlenecks and accelerating validation of process logic and control devices.</li>
+              <li>Tested and troubleshot control logic, instrumentation, and I/O systems to validate end-to-end automation and long-term reliability.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h3 class="timeline-role">BMS Software Developer</h3>
+              <span class="timeline-period">Oct 2023 – Dec 2024</span>
+            </div>
+            <p class="timeline-company">Battery Workforce Challenge · Waterloo, ON</p>
+            <ul class="timeline-bullets">
+              <li>Contributed to State of Power (SoP) and State of Charge (SoC) algorithm design and development in Simulink.</li>
+              <li>Modeled battery cells and battery pack dynamics in Simulink to support estimation and control development.</li>
+              <li>Supported hardware-in-the-loop test bench development through sensor and circuit integration.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h3 class="timeline-role">Controls Engineering Intern</h3>
+              <span class="timeline-period">May 2024 – Aug 2024</span>
+            </div>
+            <p class="timeline-company">Fossil Power Systems · Dartmouth, NS</p>
+            <ul class="timeline-bullets">
+              <li>Assisted in the design and development of Burner Management Systems for industrial boilers and combustion control systems using RSLogix.</li>
+              <li>Validated control systems against safety and performance requirements through testing and troubleshooting.</li>
+              <li>Designed an internal global object library to standardize HMI displays across projects, improving efficiency and consistency.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h3 class="timeline-role">Continuous Improvement Engineering Intern</h3>
+              <span class="timeline-period">Sep 2023 – Dec 2023</span>
+            </div>
+            <p class="timeline-company">Kruger Products · Trenton, ON</p>
+            <ul class="timeline-bullets">
+              <li>Created detailed electrical documentation and schematics in AutoCAD for new automated machinery.</li>
+              <li>Developed a content management system with a relational database to automate production metric collection, calculation, and archival using Python and SQL.</li>
+              <li>Piloted a waste reporting system in Power BI and automated PLC data collection, significantly reducing manual reporting effort.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h3 class="timeline-role">Operations &amp; Testing Technician</h3>
+              <span class="timeline-period">Jan 2023 – Apr 2023</span>
+            </div>
+            <p class="timeline-company">Swap Robotics · Kitchener, ON</p>
+            <ul class="timeline-bullets">
+              <li>Designed and managed testing apparatus for a semi-autonomous robotic fleet using I2C communication to detect and report assembly-stage faults.</li>
+              <li>Collaborated with the electrical team to operate, test, and maintain snow-plowing and solar vegetation-cutting robotic platforms.</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section id="contact" class="section contact">
+    <div class="container contact-container">
+      <h2 class="section-title"><span class="accent">05.</span> Get In Touch</h2>
+      <p class="contact-subtitle">
+        I'm actively looking for internship and full-time opportunities. Whether
+        you have a question, a cool project idea, or just want to say hi—my inbox
+        is always open!
+      </p>
+      <a href="mailto:hunter@example.com" class="btn btn-primary btn-lg">Say Hello 👋</a>
+
+      <div class="social-links">
+        <a href="https://github.com/hunterscore" class="social-link" target="_blank" rel="noopener" aria-label="GitHub">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+        </a>
+        <a href="https://linkedin.com/in/huntermadams/" class="social-link" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <p>Designed &amp; Built by <span class="accent">Hunter Adams</span> · 2025</p>
+  </footer>
+
+  <!-- ===== PROJECT MODAL ===== -->
+  <div class="project-modal" id="projectModal" aria-hidden="true">
+    <div class="project-modal-backdrop" id="projectModalBackdrop"></div>
+
+    <div class="project-modal-panel" role="dialog" aria-modal="true" aria-labelledby="projectModalTitle">
+      <button class="project-modal-close" id="projectModalClose" aria-label="Close project details">
+        ×
+      </button>
+
+      <div class="project-modal-content" id="projectModalContent"></div>
+    </div>
+  </div>
+
+  <!-- ===== PROJECT TEMPLATES ===== -->
+  <template id="project-template-snappa">
+    <div class="project-detail">
+      <h2 id="projectModalTitle">SNAPPA</h2>
+      <p class="project-detail-subtitle">
+        Semi-autonomous Navigation and Actuation for Pneumatic Pick-and-place Applications
+      </p>
+
+      <img src="assets/snappa-main.jpg" alt="SNAPPA robot overview" class="project-detail-hero">
+
+      <div class="project-detail-grid">
+        <div>
+          <h3>Overview</h3>
+          <p>
+            SNAPPA is a TurtleBot-based autonomous robot built around a Raspberry Pi and Arduino architecture.
+            It uses onboard vision for line following and target alignment, then actuates a pneumatic pickup
+            system to complete object-handling tasks.
+          </p>
+
+          <h3>What I worked on</h3>
+          <ul>
+            <li>Implemented OpenCV-based line detection and target tracking</li>
+            <li>Developed PD heading control and wheel-speed control integration</li>
+            <li>Built Pi-side state machine logic for navigation and task sequencing</li>
+            <li>Integrated USB serial communication between the Pi and motor controller</li>
+            <li>Tuned system behavior on hardware for line-loss recovery and stability</li>
+          </ul>
+
+          <h3>Engineering focus</h3>
+          <p>
+            A major part of this project was separating high-level perception and autonomy from low-level actuation,
+            making the system easier to debug, tune, and extend.
+          </p>
+        </div>
+
+        <div class="project-detail-side">
+          <img src="assets/snappa-vision.jpg" alt="SNAPPA vision pipeline output">
+          <img src="assets/snappa-gripper.jpg" alt="Close-up of SNAPPA pneumatic pickup system">
+        </div>
+      </div>
+    </div>
+  </template>
+
+  <template id="project-template-tcbm">
+    <div class="project-detail">
+      <h2 id="projectModalTitle">TCBM - Thermal Car Body Model</h2>
+      <p class="project-detail-subtitle">
+        Simulation tool for predicting thermal and electrical energy consumption in vehicle bodies
+      </p>
+
+      <img src="assets/tcbm-main.jpg" alt="Thermal model visualization" class="project-detail-hero">
+
+      <div class="project-detail-grid">
+        <div>
+          <h3>Overview</h3>
+          <p>
+            TCBM is a Python-based simulation tool developed to estimate the thermal and electrical
+            energy consumption of a vehicle body under different operating and environmental conditions.
+          </p>
+
+          <h3>What I worked on</h3>
+          <ul>
+            <li>Built thermal simulation logic in Python</li>
+            <li>Modeled environmental effects and heat transfer assumptions</li>
+            <li>Structured outputs for comparison across different operating conditions</li>
+          </ul>
+
+          <h3>Why it mattered</h3>
+          <p>
+            This project helped connect thermal engineering concepts with practical energy-use prediction,
+            especially in the context of vehicle efficiency and HVAC-related loads.
+          </p>
+        </div>
+
+        <div class="project-detail-side">
+          <img src="assets/tcbm-plot1.jpg" alt="TCBM plot showing energy consumption">
+          <img src="assets/tcbm-plot2.jpg" alt="TCBM plot showing thermal response">
+        </div>
+      </div>
+    </div>
+  </template>
+
+  <template id="project-template-caliper">
+    <div class="project-detail">
+      <h2 id="projectModalTitle">Encoder Based Caliper Device</h2>
+      <p class="project-detail-subtitle">
+        Digital measurement tool using a rack-and-pinion mechanism and rotary encoder
+      </p>
+
+      <img src="assets/caliper-main.jpg" alt="Encoder based caliper device" class="project-detail-hero">
+
+      <div class="project-detail-grid">
+        <div>
+          <h3>Overview</h3>
+          <p>
+            This project involved designing and building a caliper-style measurement device that converts
+            linear displacement into digital measurements using a 3D-printed rack-and-pinion mechanism and
+            a rotary encoder.
+          </p>
+
+          <h3>What I worked on</h3>
+          <ul>
+            <li>Mechanical design of the rack-and-pinion measurement mechanism</li>
+            <li>Integration of the encoder and embedded electronics</li>
+            <li>Calibration and conversion from angular motion to linear displacement</li>
+            <li>Physical prototyping and system validation</li>
+          </ul>
+
+          <h3>Engineering focus</h3>
+          <p>
+            The main challenge was achieving consistent measurement behavior while integrating mechanical,
+            sensing, and embedded components into a compact custom device.
+          </p>
+        </div>
+
+        <div class="project-detail-side">
+          <img src="assets/caliper-closeup.jpg" alt="Close-up of caliper mechanism">
+          <img src="assets/caliper-cad.jpg" alt="CAD view of encoder caliper design">
+        </div>
+      </div>
+    </div>
+  </template>
+
+  <script src="script.js"></script>
+</body>
+</html>
