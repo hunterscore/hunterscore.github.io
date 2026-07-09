@@ -407,6 +407,10 @@ ul { list-style: none; }
   gap: 1.5rem;
 }
 
+.interests-grid {
+  grid-template-columns: repeat(3, 1fr);
+}
+
 .skill-card {
   background: var(--surface);
   border: 1px solid var(--border);
@@ -421,9 +425,15 @@ ul { list-style: none; }
   box-shadow: 0 10px 30px rgba(166, 226, 46, 0.1);
 }
 
+.interest-card {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
 .skill-icon {
   font-size: 2rem;
-  margin-bottom: 1rem;
+  margin-bottom: 0;
 }
 
 .skill-card h3 {
@@ -436,6 +446,24 @@ ul { list-style: none; }
   font-size: 0.9rem;
   color: var(--text-muted);
   line-height: 1.6;
+  flex: 1;
+}
+
+.interest-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: auto;
+  list-style: none;
+}
+
+.interest-tags li {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.72rem;
+  color: var(--accent);
+  background: rgba(166, 226, 46, 0.08);
+  padding: 0.2rem 0.6rem;
+  border-radius: 4px;
 }
 
 /* ============================================================
@@ -847,6 +875,12 @@ ul { list-style: none; }
     grid-template-columns: 1fr;
   }
   .about-image-wrapper { order: -1; }
+}
+
+@media (max-width: 960px) {
+  .interests-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media (max-width: 700px) {
