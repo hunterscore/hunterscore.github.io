@@ -3,8 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Hunter Adams – Engineering Student Portfolio" />
-  <title>Hunter Adams | Engineering Portfolio</title>
+  <meta name="description" content="Hunter Adams – Mechatronics Engineering, University of Waterloo. Vision-based perception, state estimation, and autonomy for robots in space and other inaccessible environments." />
+  <meta name="theme-color" content="#06262e" />
+  <title>Hunter Adams | Robotics &amp; Computer Vision</title>
   <link rel="stylesheet" href="styles.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -21,11 +22,11 @@
       </button>
       <ul class="nav-links" id="navLinks">
         <li><a href="#about" class="nav-link">About</a></li>
-        <li><a href="#skills" class="nav-link">Skills</a></li>
-        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#research" class="nav-link">Research</a></li>
         <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
         <li><a href="#contact" class="nav-link">Contact</a></li>
-        <li><a href="assets/resume.pdf" class="btn btn-outline" target="_blank" rel="noopener">Résumé</a></li>
+        <li><a href="assets/cv.pdf" class="btn btn-outline" target="_blank" rel="noopener">Résumé</a></li>
       </ul>
     </div>
   </nav>
@@ -35,14 +36,13 @@
     <div class="hero-content">
       <p class="hero-greeting">Hi, my name is</p>
       <h1 class="hero-name">Hunter Adams<span class="accent">.</span></h1>
-      <!-- <h2 class="hero-tagline">I build cool sh*t.</h2> removed for professionalism-->
       <p class="hero-description">
-        I'm a Mechatronics Engineering student at the University of Waterloo passionate about 
-        embedded systems, human-robotic interaction, sustainable transportation technology, 
-        and control systems. Currently seeking internship and research opportunities.
+        I'm a Mechatronics Engineering student at the University of Waterloo working on
+        vision-based perception and autonomy for robots in space and other inaccessible
+        environments. I'm seeking MASc/PhD research positions for Fall 2027.
       </p>
       <div class="hero-cta">
-        <a href="#projects" class="btn btn-primary">View My Work</a>
+        <a href="#research" class="btn btn-primary">Research Interests</a>
         <a href="#contact" class="btn btn-outline">Get In Touch</a>
       </div>
     </div>
@@ -50,24 +50,24 @@
       <div class="code-block">
         <div class="code-header">
           <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
-          <span class="code-filename">portfolio.py</span>
+          <span class="code-filename">perception.py</span>
         </div>
-        <pre class="code-body"><code><span class="kw">class</span> <span class="cls">Engineer</span>:
+        <pre class="code-body"><code><span class="kw">class</span> <span class="cls">Researcher</span>:
     <span class="kw">def</span> <span class="fn">__init__</span>(self):
-        self.name    = <span class="str">"Hunter Adams"</span>
-        self.degree  = <span class="str">"Mechatronics Engineering"</span>
-        self.passion = [
-            <span class="str">"embedded systems"</span>,
-            <span class="str">"human-robotic interaction"</span>,
-            <span class="str">"sustainable transportation technology"</span>,
-            <span class="str">"control systems"</span>
+        self.name      = <span class="str">"Hunter Adams"</span>
+        self.degree    = <span class="str">"Mechatronics Engineering"</span>
+        self.interests = [
+            <span class="str">"vision-based perception"</span>,
+            <span class="str">"visual state estimation"</span>,
+            <span class="str">"sensor calibration"</span>,
+            <span class="str">"autonomy in space"</span>
         ]
-        self.coffee  = <span class="num">float</span>(<span class="str">"inf"</span>)
+        self.coffee    = <span class="num">float</span>(<span class="str">"inf"</span>)
 
     <span class="kw">def</span> <span class="fn">greet</span>(self):
-        <span class="kw">return</span> <span class="str">"Let's build something!"</span>
+        <span class="kw">return</span> <span class="str">"Let's build robots that see."</span>
 
-me = <span class="cls">Engineer</span>()
+me = <span class="cls">Researcher</span>()
 <span class="fn">print</span>(me.greet())</code></pre>
       </div>
     </div>
@@ -80,13 +80,19 @@ me = <span class="cls">Engineer</span>()
       <div class="about-grid">
         <div class="about-text">
           <p>
-            Hello! I'm Hunter, I'm a third-year Mechatronics Engineering student at
-            the University of Waterloo. My journey into engineering started when I
-            built my first robot at 12, and since that day, I've been hooked on making
-            hardware and software work together seamlessly.
+            Hello! I'm Hunter, a fourth-year Mechatronics Engineering student at the
+            University of Waterloo, graduating in April 2027. I built my first robot at 12,
+            and I've been hooked on making hardware and software work together ever since.
           </p>
           <p>
-            When I'm not coding, you'll find me reading, tending to my cactuses, or 
+            My co-op terms started in controls and industrial automation: burner management,
+            distributed control systems, battery state estimation, and field-testing autonomous
+            robots. More recently my work has moved toward perception. I've built vision-based
+            measurement for self-driving laboratories and optical dilatometry for additive
+            manufacturing. I'm now working on pose estimation for non-cooperative satellites.
+          </p>
+          <p>
+            When I'm not coding, you'll find me reading, tending to my cactuses, or
             pacing in a circle.
           </p>
           <p>
@@ -95,10 +101,10 @@ me = <span class="cls">Engineer</span>()
           <ul class="tech-list">
             <li>Python</li>
             <li>C / C++</li>
-            <li>JavaScript (React)</li>
             <li>OpenCV</li>
-            <li>Embedded Linux</li>
+            <li>MATLAB / Simulink</li>
             <li>ROS 2</li>
+            <li>Linux / Docker</li>
           </ul>
         </div>
         <div class="about-image-wrapper">
@@ -113,150 +119,70 @@ me = <span class="cls">Engineer</span>()
   </section>
 
   <!-- ===== RESEARCH INTERESTS ===== -->
-  <section id="skills" class="section skills">
+  <section id="research" class="section skills">
     <div class="container">
       <h2 class="section-title"><span class="accent">02.</span> Research Interests</h2>
+      <p class="research-lead">
+        I'm interested in vision-based perception and learning for autonomous robotic systems
+        in aerospace and other inaccessible environments. Here, cameras are often the most
+        informative sensor available and also the least reliable. My goal is closed-loop
+        autonomy for inspection, assembly, and manufacturing in space.
+      </p>
       <div class="skills-grid interests-grid">
 
         <div class="skill-card interest-card">
-          <div class="skill-icon">⚗️</div>
-          <h3>Chemical &amp; Industrial Process Control</h3>
+          <div class="skill-icon">🛰️</div>
+          <h3>Vision-based Perception for Space Robotics</h3>
           <p>
-            Interested in the design, modeling, and control of chemical and industrial processes —
-            spanning regulatory control, process simulation, and automation of pilot and production-scale
-            systems. Motivated by applications in process safety, energy efficiency, and dynamic
-            system optimization.
+            Perception and learning for robots operating where direct human access is impossible.
+            I'm especially interested in estimating the pose of non-cooperative spacecraft
+            from monocular images, so a servicer can approach, inspect, or capture a target
+            that has no markers and cannot communicate.
           </p>
           <ul class="interest-tags">
-            <li>Process Simulation</li>
-            <li>PID &amp; Advanced Control</li>
-            <li>DCS / PLC</li>
-            <li>P&amp;ID Design</li>
-            <li>Chemical Engineering</li>
+            <li>Pose Estimation</li>
+            <li>Computer Vision</li>
+            <li>Deep Learning</li>
+            <li>Space Robotics</li>
           </ul>
+          <p class="related-work"><span>RELATED</span><a href="#proj-tumbleweed">Tumbleweed</a></p>
         </div>
 
         <div class="skill-card interest-card">
-          <div class="skill-icon">🦾</div>
-          <h3>Robotic Manipulation Dynamics &amp; Control</h3>
+          <div class="skill-icon">📷</div>
+          <h3>Visual State Estimation &amp; Calibration under Degraded Imaging</h3>
           <p>
-            Drawn to the application of kinematics, dynamics, and real-time control in robotic
-            manipulators. Interested in research spanning trajectory planning, force control,
-            and vision-guided manipulation for autonomous robotic systems.
+            Turning images into reliable state estimates when imaging conditions work against you:
+            harsh directional lighting, glare, eclipse, low texture, and drifting sensors.
+            I'm interested in calibration and estimation methods that degrade gracefully
+            and know when to trust what they see.
           </p>
           <ul class="interest-tags">
-            <li>Manipulator Kinematics</li>
-            <li>Force &amp; Impedance Control</li>
-            <li>ROS 2</li>
-            <li>Vision-guided Manipulation</li>
             <li>State Estimation</li>
+            <li>Camera Calibration</li>
+            <li>Sensor Fusion</li>
+            <li>Image Processing</li>
           </ul>
+          <p class="related-work"><span>RELATED</span><a href="#exp-ac">Acceleration Consortium</a> · <a href="#exp-msam">MSAM Lab</a></p>
         </div>
 
         <div class="skill-card interest-card">
-          <div class="skill-icon">🏭</div>
-          <h3>Advanced &amp; Additive Manufacturing</h3>
+          <div class="skill-icon">⚙️</div>
+          <h3>Physics-based Modelling, Simulation &amp; Closed-loop Autonomy</h3>
           <p>
-            Interested in how additive manufacturing, automation, and materials science intersect
-            to push the boundaries of what can be produced. Drawn to research in process
-            monitoring, novel material systems, and the design of parts that exploit
-            the unique geometric freedom of additive processes.
+            Building physics-based models and simulations of robots, vehicles, and processes,
+            then calibrating them against real measurements so they can be trusted for prediction
+            and control. I'm interested in pairing these models with perception so that autonomous
+            systems can reason about, and act on, the physical world they observe.
           </p>
           <ul class="interest-tags">
-            <li>Additive Manufacturing</li>
-            <li>Materials Science</li>
-            <li>Process Monitoring</li>
-            <li>Precision Measurement</li>
-            <li>Automation &amp; Mechatronics</li>
+            <li>Physics-based Simulation</li>
+            <li>Model Calibration</li>
+            <li>Bayesian Optimization</li>
+            <li>Closed-loop Autonomy</li>
           </ul>
+          <p class="related-work"><span>RELATED</span><a href="#exp-msam">MSAM Lab</a> · <a href="#exp-dlr">DLR</a> · <a href="#exp-ac">Acceleration Consortium</a></p>
         </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== PROJECTS ===== -->
-  <section id="projects" class="section projects">
-    <div class="container">
-      <h2 class="section-title"><span class="accent">03.</span> Projects</h2>
-      <div class="projects-grid">
-
-        <article
-          class="project-card featured"
-          data-project="snappa"
-          aria-label="Open SNAPPA project details"
-        >
-          <div class="project-top">
-            <span class="project-label">Featured Project</span>
-            <div class="project-links">
-              <a href="https://github.com/hunterscore/snappa-robot" aria-label="GitHub repository" class="icon-link" target="_blank" rel="noopener">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
-              </a>
-            </div>
-          </div>
-          <h3 class="project-title">SNAPPA - Semi-autonomous Navigation and Actuation for Pneumatic Pick-and-place Applications</h3>
-          <div class="project-description">
-            <p>
-              Autonomous mobile robot built with a Raspberry Pi and Arduino for vision-based line following, target alignment,
-              and object-handling tasks. Implemented a camera-based line detection pipeline, PD heading control, PID motor speed control,
-              USB serial communication, and a Raspberry Pi-side state machine to manage navigation and task execution.
-            </p>
-          </div>
-          <ul class="project-tags">
-            <li>Python</li>
-            <li>OpenCV</li>
-            <li>Raspberry Pi</li>
-            <li>Arduino</li>
-            <li>Controls</li>
-          </ul>
-        </article>
-
-        <article
-          class="project-card small"
-          data-project="tcbm"
-          aria-label="Open TCBM project details"
-        >
-          <div class="project-top">
-            <div class="folder-icon" aria-hidden="true">📁</div>
-          </div>
-          <h3 class="project-title">TCBM - Thermal Car Body Model</h3>
-          <p>
-            A Python simulation tool for predicting the thermal and electrical energy consumption
-            of a car body under various environmental conditions.
-          </p>
-          <ul class="project-tags">
-            <li>Thermal Modeling</li>
-            <li>Python</li>
-            <li>Simulation</li>
-          </ul>
-        </article>
-
-        <article
-          class="project-card small"
-          data-project="caliper"
-          aria-label="Open encoder caliper project details"
-        >
-          <div class="project-top">
-            <div class="folder-icon" aria-hidden="true">📁</div>
-            <div class="project-links">
-              <a href="https://github.com/hunterscore/encoder-caliper" aria-label="GitHub repository" class="icon-link" target="_blank" rel="noopener">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-                  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 21.13V25" />
-                </svg>
-              </a>
-            </div>
-          </div>
-          <h3 class="project-title">Encoder Based Caliper Device</h3>
-          <p>
-            Designed and built a caliper-style measurement device integrating a 3D-printed rack-and-pinion
-            system with a rotary encoder to convert linear displacement into accurate digital measurements.
-          </p>
-          <ul class="project-tags">
-            <li>Embedded</li>
-            <li>CAD</li>
-            <li>Sensing</li>
-          </ul>
-        </article>
 
       </div>
     </div>
@@ -265,53 +191,80 @@ me = <span class="cls">Engineer</span>()
   <!-- ===== EXPERIENCE ===== -->
   <section id="experience" class="section experience">
     <div class="container">
-      <h2 class="section-title"><span class="accent">04.</span> Experience</h2>
+      <h2 class="section-title"><span class="accent">03.</span> Experience</h2>
+
+      <h3 class="timeline-group-title">Research</h3>
       <div class="timeline">
 
-        <div class="timeline-item">
+        <div class="timeline-item" id="exp-msam">
           <div class="timeline-dot"></div>
           <div class="timeline-content">
             <div class="timeline-header">
-              <h3 class="timeline-role">Robotics Engineering Co-op </h3>
-              <span class="timeline-period">May 2026 – Present</span>
+              <h3 class="timeline-role">Undergraduate Research Assistant</h3>
+              <span class="timeline-period">Sep 2026 – Present</span>
             </div>
-            <p class="timeline-company">Acceleration Consortium · Toronto, ON</p>
+            <p class="timeline-company">Multi-Scale Additive Manufacturing Lab, University of Waterloo · Waterloo, ON</p>
             <ul class="timeline-bullets">
-              <li>Designed, built, and tested robotic systems for autonomous manipulation in self driving laboratory environments.</li>
-              <li>Developed and implemented a vision-based pH measurement module for rapid and autonomous testing in laboratory settings.</li>
-              <li>Collaborated with multidisciplinary teams to integrate hardware and software, ensuring reliable operation of robotic platforms.</li>
+              <li>Contributing to a vision-based optical dilatometry system that measures part deformation and shrinkage during sintering, including image annotation and experimental analysis.</li>
+              <li>Developed a pipeline that calibrates finite element sintering models against optical dilatometry measurements using Bayesian optimization, improving simulation accuracy for binder jetting additive manufacturing (BJAM) research.</li>
             </ul>
           </div>
         </div>
 
-        <div class="timeline-item">
+        <div class="timeline-item" id="exp-ac">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h3 class="timeline-role">Robotics Engineering Co-op</h3>
+              <span class="timeline-period">May 2026 – Aug 2026</span>
+            </div>
+            <p class="timeline-company">Acceleration Consortium · Toronto, ON</p>
+            <ul class="timeline-bullets">
+              <li>Developed a vision-based pH detection module with image processing and sensor calibration pipelines for real-time chemical state monitoring, replacing a manual measurement step in autonomous experiments.</li>
+              <li>Built Python orchestration software and robotic workflows enabling closed-loop autonomous experimentation in self-driving laboratories.</li>
+              <li>Translated experimental requirements from research scientists into engineering specifications for robotic systems.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item" id="exp-dlr">
           <div class="timeline-dot"></div>
           <div class="timeline-content">
             <div class="timeline-header">
               <h3 class="timeline-role">Software Engineering Intern</h3>
               <span class="timeline-period">Sep 2025 – Dec 2025</span>
             </div>
-            <p class="timeline-company">German Aerospace Center (DLR) · Stuttgart, Germany</p>
+            <p class="timeline-company">German Aerospace Center (DLR), Institute of Vehicle Concepts · Stuttgart, Germany</p>
             <ul class="timeline-bullets">
-              <li>Developed a Python simulation tool to calculate HVAC electrical energy requirements for battery-electric and hydrogen fuel cell rail vehicles.</li>
-              <li>Analyzed the impact of HVAC operating strategies on power consumption, battery life, and overall vehicle energy usage.</li>
-              <li>Conducted literature review and collaborated with researchers to validate model assumptions and outputs against real-world data.</li>
+              <li>Built and validated a physics-based Python simulation of HVAC energy demand in battery-electric and hydrogen fuel cell rail vehicles, used by institute researchers to evaluate vehicle concepts.</li>
+              <li>Evaluated HVAC operating strategies across environmental conditions, quantifying trade-offs between power consumption, battery cell lifetime, and system performance.</li>
+              <li>Documented simulation methodology and results to support reproducibility and the institute's research into energy-efficient rail transit.</li>
             </ul>
+            <p class="timeline-note">
+              Acknowledged in: S. Wieser, M. Schenker, L. Brünner, and L. Boeck,
+              <a href="https://doi.org/10.3390/en19173990" target="_blank" rel="noopener">“Heat Pumps and Optimized Thermal Management Strategies in Battery-Electric Rail Vehicles—Modeling and Evaluation,”</a>
+              <em>Energies</em>, vol. 19, no. 17, art. 3990, 2026.
+            </p>
           </div>
         </div>
+
+      </div>
+
+      <h3 class="timeline-group-title">Industry</h3>
+      <div class="timeline">
 
         <div class="timeline-item">
           <div class="timeline-dot"></div>
           <div class="timeline-content">
             <div class="timeline-header">
-              <h3 class="timeline-role">Control Systems Engineering Intern</h3>
+              <h3 class="timeline-role">Controls Systems Engineering Intern</h3>
               <span class="timeline-period">Jan 2025 – Apr 2025</span>
             </div>
             <p class="timeline-company">Zeton Inc. · Oakville, ON</p>
             <ul class="timeline-bullets">
-              <li>Developed, configured, and implemented Distributed Control System (DCS) strategies across modular pilot plant projects.</li>
-              <li>Contributed to test plan development and execution, identifying bottlenecks and accelerating validation of process logic and control devices.</li>
-              <li>Tested and troubleshot control logic, instrumentation, and I/O systems to validate end-to-end automation and long-term reliability.</li>
+              <li>Developed, configured, and implemented Distributed Control System (DCS) strategies across modular pilot plants.</li>
+              <li>Contributed to test plan development and execution, identifying bottlenecks and accelerating functional validation of process logic and control devices.</li>
+              <li>Tested and troubleshot control logic, instrumentation, and I/O systems to validate end-to-end automation and operational reliability.</li>
             </ul>
           </div>
         </div>
@@ -323,11 +276,12 @@ me = <span class="cls">Engineer</span>()
               <h3 class="timeline-role">BMS Software Developer</h3>
               <span class="timeline-period">Oct 2023 – Dec 2024</span>
             </div>
-            <p class="timeline-company">Battery Workforce Challenge · Waterloo, ON</p>
+            <p class="timeline-company">Battery Workforce Competition · Waterloo, ON</p>
             <ul class="timeline-bullets">
-              <li>Contributed to State of Power (SoP) and State of Charge (SoC) algorithm design and development in Simulink.</li>
-              <li>Modeled battery cells and battery pack dynamics in Simulink to support estimation and control development.</li>
-              <li>Supported hardware-in-the-loop test bench development through sensor and circuit integration.</li>
+              <li>Contributed to the design of State of Charge (SoC) and State of Power (SoP) estimation algorithms in MATLAB/Simulink, estimating battery state from sensor measurements.</li>
+              <li>Modelled cell, module, and pack dynamics in Simulink to support estimator development and validation.</li>
+              <li>Supported hardware-in-the-loop (HIL) test bench development, integrating sensors and circuitry for algorithm validation.</li>
+              <li>Assisted in Battery Disconnect Unit (BDU) design and isolation detection logic.</li>
             </ul>
           </div>
         </div>
@@ -341,9 +295,9 @@ me = <span class="cls">Engineer</span>()
             </div>
             <p class="timeline-company">Fossil Power Systems · Dartmouth, NS</p>
             <ul class="timeline-bullets">
-              <li>Assisted in the design and development of Burner Management Systems for industrial boilers and combustion control systems using RSLogix and Studio 5000.</li>
-              <li>Validated control systems against safety and performance requirements through testing and troubleshooting.</li>
-              <li>Designed an internal global object library to standardize HMI displays across projects, improving efficiency and consistency.</li>
+              <li>Assisted in the design and development of burner management systems and combustion control software for industrial-grade recovery boilers using RSLogix.</li>
+              <li>Designed a reusable HMI object library in FactoryTalk View Studio, standardizing display graphics across future projects.</li>
+              <li>Created VBA macros to automate design and testing, including simulation tests for burner logic and wire mapping, improving validation consistency.</li>
             </ul>
           </div>
         </div>
@@ -357,9 +311,8 @@ me = <span class="cls">Engineer</span>()
             </div>
             <p class="timeline-company">Kruger Products · Trenton, ON</p>
             <ul class="timeline-bullets">
-              <li>Created detailed electrical documentation and schematics in AutoCAD for new automated machinery.</li>
-              <li>Developed a content management system with a relational database to automate production metric collection, calculation, and archival using Python and SQL.</li>
-              <li>Piloted a waste reporting system in Power BI and automated PLC data collection, significantly reducing manual reporting effort.</li>
+              <li>Created electrical documentation and schematics in AutoCAD for new automated machinery in the conversion plant.</li>
+              <li>Developed a relational database system in SQL and MS Access to automate the collection, calculation, and archival of production metrics.</li>
             </ul>
           </div>
         </div>
@@ -373,11 +326,112 @@ me = <span class="cls">Engineer</span>()
             </div>
             <p class="timeline-company">Swap Robotics · Kitchener, ON</p>
             <ul class="timeline-bullets">
-              <li>Designed and managed testing apparatus for a semi-autonomous robotic fleet using I2C communication to detect and report assembly-stage faults.</li>
-              <li>Collaborated with the electrical team to operate, test, and maintain snow-plowing and solar vegetation-cutting robotic platforms.</li>
+              <li>Conducted tele-operation testing of semi-autonomous robots, validating remote control responsiveness, sensor feedback, and safety stop behaviour, and logging faults for the engineering team.</li>
+              <li>Ran path-following tests on autonomous routes, measuring deviation from planned paths and reporting tracking and localization issues to support navigation tuning.</li>
+              <li>Operated, tested, and maintained semi-autonomous robots in outdoor field trials, including snow clearing and solar-farm vegetation cutting.</li>
             </ul>
           </div>
         </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS ===== -->
+  <section id="projects" class="section projects">
+    <div class="container">
+      <h2 class="section-title"><span class="accent">04.</span> Projects</h2>
+      <div class="projects-grid">
+
+        <article
+          class="project-card featured"
+          id="proj-tumbleweed"
+          data-project="tumbleweed"
+          aria-label="Open Tumbleweed project details"
+        >
+          <div class="project-top">
+            <span class="project-label">Featured · In Progress</span>
+            <div class="project-links">
+              <a href="https://github.com/hunterscore/tumbleweed" aria-label="GitHub repository" class="icon-link" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">Tumbleweed: Non-cooperative Satellite Pose Estimation</h3>
+          <div class="project-description">
+            <p>
+              Using Stanford's SPEED+ dataset to build and tune a computer vision and machine
+              learning model that estimates the pose of a non-cooperative spacecraft (Tango) from
+              monocular images. A keypoint heatmap maps the target's geometry and compares the relative
+              locations of its features as seen by the vision pipeline. The validated pose estimates then
+              feed a control model for satellite navigation and interception.
+            </p>
+          </div>
+          <ul class="project-tags">
+            <li>Computer Vision</li>
+            <li>Machine Learning</li>
+            <li>Pose Estimation</li>
+            <li>SPEED+</li>
+            <li>GNC</li>
+          </ul>
+        </article>
+
+        <article
+          class="project-card small"
+          id="proj-snappa"
+          data-project="snappa"
+          aria-label="Open SNAPPA project details"
+        >
+          <div class="project-top">
+            <span class="project-label">Autonomous Mobile Robot</span>
+            <div class="project-links">
+              <a href="https://github.com/hunterscore/snappa-robot" aria-label="GitHub repository" class="icon-link" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">SNAPPA: Vision-guided Navigation &amp; Pick-and-place</h3>
+          <div class="project-description">
+            <p>
+              Semi-autonomous Navigation and Actuation for Pneumatic Pick-and-place Applications.
+              A mobile robot that uses an onboard camera as its primary feedback signal: an OpenCV pipeline
+              detects the line and target, feeding PD heading control and PID wheel-speed control,
+              and a Raspberry Pi state machine sequences navigation, alignment, and pneumatic actuation.
+            </p>
+          </div>
+          <ul class="project-tags">
+            <li>Python</li>
+            <li>OpenCV</li>
+            <li>Visual Feedback Control</li>
+            <li>Raspberry Pi</li>
+            <li>Arduino</li>
+          </ul>
+        </article>
+
+        <article
+          class="project-card small"
+          data-project="caliper"
+          aria-label="Open encoder caliper project details"
+        >
+          <div class="project-top">
+            <div class="folder-icon" aria-hidden="true">📁</div>
+            <div class="project-links">
+              <a href="https://github.com/hunterscore/encoder-caliper" aria-label="GitHub repository" class="icon-link" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">Encoder-based Caliper: Sensing &amp; Calibration</h3>
+          <p>
+            A caliper-style measurement device that pairs a 3D-printed rack-and-pinion with a rotary
+            encoder, calibrated to convert angular motion into accurate linear displacement.
+          </p>
+          <ul class="project-tags">
+            <li>Sensor Calibration</li>
+            <li>Embedded</li>
+            <li>CAD</li>
+          </ul>
+        </article>
 
       </div>
     </div>
@@ -388,9 +442,9 @@ me = <span class="cls">Engineer</span>()
     <div class="container contact-container">
       <h2 class="section-title"><span class="accent">05.</span> Get In Touch</h2>
       <p class="contact-subtitle">
-        I'm actively looking for internship and full-time opportunities. Whether
-        you have a question, a cool project idea, or just want to say hi—my inbox
-        is always open!
+        I'm applying to graduate research programs (MASc/PhD) for Fall 2027 in robotics,
+        computer vision, and space autonomy. If you supervise work in these areas or
+        just want to talk research, I'd love to hear from you.
       </p>
       <a href="mailto:hmadams@uwaterloo.ca" class="btn btn-primary btn-lg">Say Hello 👋</a>
 
@@ -407,7 +461,7 @@ me = <span class="cls">Engineer</span>()
 
   <!-- ===== FOOTER ===== -->
   <footer class="footer">
-    <p>Designed &amp; Built by <span class="accent">Hunter Adams</span> · 2025</p>
+    <p>Designed &amp; Built by <span class="accent">Hunter Adams</span> · 2026</p>
   </footer>
 
   <!-- ===== PROJECT MODAL ===== -->
@@ -424,6 +478,48 @@ me = <span class="cls">Engineer</span>()
   </div>
 
   <!-- ===== PROJECT TEMPLATES ===== -->
+  <template id="project-template-tumbleweed">
+    <div class="project-detail">
+      <h2 id="projectModalTitle">Tumbleweed</h2>
+      <p class="project-detail-subtitle">
+        Vision-based pose estimation for non-cooperative satellites · May 2026 – Present
+      </p>
+
+      <div class="project-detail-grid single">
+        <div>
+          <h3>Overview</h3>
+          <p>
+            Autonomous servicing, inspection, and debris removal all depend on a chaser spacecraft knowing
+            the position and orientation of a target that has no fiducial markers, no communication link, and
+            no interest in cooperating. Tumbleweed explores this problem from a single camera, using Stanford's
+            SPEED+ dataset of images of the Tango spacecraft.
+          </p>
+
+          <h3>Approach</h3>
+          <ul class="timeline-bullets">
+            <li>Apply computer vision and machine learning to create and tune a predictive model for non-cooperative satellite pose estimation on SPEED+.</li>
+            <li>Construct a keypoint heatmap that maps the target's geometry and compares the relative locations of Tango's key features as detected by the vision pipeline.</li>
+            <li>Use the validated pose estimates as the measurement input to a theoretical control system that models satellite navigation and interception.</li>
+          </ul>
+
+          <h3>Why it matters to me</h3>
+          <p>
+            SPEED+ includes hardware-in-the-loop test images under harsh, realistic lighting, which makes
+            it a natural testbed for the questions I care most about: perception for space robotics,
+            state estimation under degraded imaging, and closed-loop autonomy in orbit.
+          </p>
+
+          <h3>Status</h3>
+          <p>
+            In progress. Code and results are on
+            <a href="https://github.com/hunterscore/tumbleweed" target="_blank" rel="noopener">GitHub</a>
+            and will be updated as the work matures.
+          </p>
+        </div>
+      </div>
+    </div>
+  </template>
+
   <template id="project-template-snappa">
     <div class="project-detail">
       <h2 id="projectModalTitle">SNAPPA</h2>
@@ -437,70 +533,30 @@ me = <span class="cls">Engineer</span>()
           <p>
             SNAPPA is a TurtleBot-based autonomous robot built around a Raspberry Pi and Arduino architecture.
             It uses onboard vision for line following and target alignment, then actuates a pneumatic picking
-            system to complete object-handling tasks.
+            system to complete object-handling tasks. The camera is the robot's primary feedback signal:
+            every navigation and alignment decision closes the loop through the vision pipeline.
           </p>
 
           <h3>What I worked on</h3>
           <ul class="timeline-bullets">
             <li>Implemented OpenCV-based line detection and target tracking</li>
-            <li>Developed PD heading control and PID wheel-speed control</li>
+            <li>Developed PD heading control and PID wheel-speed control driven by visual error</li>
             <li>Built Pi-side state machine logic for navigation and task sequencing</li>
             <li>Integrated USB serial communication between the Pi and Arduino</li>
-            <li>Tuned system behavior on hardware for line-loss recovery and stability</li>
+            <li>Tuned system behaviour on hardware for line-loss recovery and stability</li>
           </ul>
 
           <h3>Outcome</h3>
           <p>
-            SNAPPA has concluded. While our entry was not competitive in the MTE 380 competition, the project was very successful in
-            delivering a working integration of vision, controls, pneumatic actuation, and task sequencing on hardware. The public
-            repository may not reflect every stretch goal from the course.
+            SNAPPA has concluded. Our entry was not competitive in the MTE 380 competition, but the project
+            delivered a working integration of vision, controls, pneumatic actuation, and task sequencing
+            on hardware. The public repository may not reflect every stretch goal from the course.
           </p>
         </div>
 
         <div class="project-detail-side">
-          <img src="assets/linefollowing_display.png" alt="SNAPPA vision Display for line following">
+          <img src="assets/linefollowing_display.png" alt="SNAPPA vision display for line following">
           <img src="assets/snappa_demo.gif" alt="SNAPPA robot overview">
-        </div>
-      </div>
-    </div>
-  </template>
-
-  <template id="project-template-tcbm">
-    <div class="project-detail">
-      <h2 id="projectModalTitle">TCBM - Thermal Car Body Model</h2>
-      <p class="project-detail-subtitle">
-        Simulation tool for predicting thermal and electrical energy consumption in vehicle bodies
-      </p>
-
-      <div class="project-detail-grid">
-        <div>
-          <h3>Overview</h3>
-          <p>
-            The TCBM is a Python-based simulation tool developed to estimate the thermal and electrical
-            energy consumption of a vehicle body under different operating and environmental conditions.
-            Unfortunately, I don't have permission to share the code for this project as it was developed for the DLR, 
-            but it involved modeling heat transfer processes, environmental effects, and HVAC loads to predict energy usage 
-            for thermal management in hydrogen rail vehicles.
-          </p>
-
-          <h3>What I worked on</h3>
-          <ul class="timeline-bullets">
-            <li>Built thermal simulation logic in Python</li>
-            <li>Modeled environmental effects and heat transfer assumptions</li>
-            <li>Structured outputs for comparison across different operating conditions</li>
-          </ul>
-
-          <h3>Research Application</h3>
-          <p>
-            This project is still ongoing, and will be used to support further research into energy-efficient HVAC strategies 
-            for battery-electric and hydrogen fuel cell rail vehicles at the DLR. Including but not limited to; research in 
-            refrigerant selection, heat exchanger design, control strategy development, and battery management.
-          </p>
-        </div>
-
-        <div class="project-detail-side">
-          <img src="assets/TCBM_operation.jpg" alt="Plot of various vehicle parameters over simulated time">
-          <img src="assets/TCBM_power_comparison.jpg" alt="TCBM showing average electrical power consumption comparison across different operating conditions">
         </div>
       </div>
     </div>
@@ -508,7 +564,7 @@ me = <span class="cls">Engineer</span>()
 
   <template id="project-template-caliper">
     <div class="project-detail">
-      <h2 id="projectModalTitle">Encoder Based Caliper Device</h2>
+      <h2 id="projectModalTitle">Encoder-based Caliper</h2>
       <p class="project-detail-subtitle">
         Digital measurement tool using a rack-and-pinion mechanism and rotary encoder
       </p>
