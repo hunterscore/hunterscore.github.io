@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Hunter Adams – Mechatronics Engineering, University of Waterloo. Vision-based perception, state estimation, and autonomy for robots in space and other inaccessible environments." />
+  <meta name="description" content="Hunter Adams – Mechatronics Engineering, University of Waterloo. Perception, localization, physics-based modelling, and mechatronic systems for autonomous robots in space and other inaccessible environments." />
   <meta name="theme-color" content="#06262e" />
-  <title>Hunter Adams | Robotics &amp; Computer Vision</title>
+  <title>Hunter Adams | Robotics &amp; Mechatronics</title>
   <link rel="stylesheet" href="styles.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -37,9 +37,9 @@
       <p class="hero-greeting">Hi, my name is</p>
       <h1 class="hero-name">Hunter Adams<span class="accent">.</span></h1>
       <p class="hero-description">
-        I'm a Mechatronics Engineering student at the University of Waterloo working on
-        vision-based perception and autonomy for robots in space and other inaccessible
-        environments. I'm seeking MASc/PhD research positions for Fall 2027.
+        I'm a Mechatronics Engineering student at the University of Waterloo interested in
+        vision-based estimation, localization, and autonomy for robots in space and other
+        inaccessible environments. I'm seeking MASc research positions for Fall 2027.
       </p>
       <div class="hero-cta">
         <a href="#research" class="btn btn-primary">Research Interests</a>
@@ -50,24 +50,25 @@
       <div class="code-block">
         <div class="code-header">
           <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
-          <span class="code-filename">perception.py</span>
+          <span class="code-filename">portfolio.py</span>
         </div>
-        <pre class="code-body"><code><span class="kw">class</span> <span class="cls">Researcher</span>:
+        <pre class="code-body"><code><span class="kw">class</span> <span class="cls">Engineer</span>:
     <span class="kw">def</span> <span class="fn">__init__</span>(self):
         self.name      = <span class="str">"Hunter Adams"</span>
         self.degree    = <span class="str">"Mechatronics Engineering"</span>
         self.interests = [
-            <span class="str">"vision-based perception"</span>,
-            <span class="str">"visual state estimation"</span>,
-            <span class="str">"sensor calibration"</span>,
+            <span class="str">"vision-based estimation"</span>,
+            <span class="str">"robot localization"</span>,
+            <span class="str">"physics-based modelling"</span>,
+            <span class="str">"mechatronic systems"</span>,
             <span class="str">"autonomy in space"</span>
         ]
         self.coffee    = <span class="num">float</span>(<span class="str">"inf"</span>)
 
     <span class="kw">def</span> <span class="fn">greet</span>(self):
-        <span class="kw">return</span> <span class="str">"Let's build robots that see."</span>
+        <span class="kw">return</span> <span class="str">"Let's build something!"</span>
 
-me = <span class="cls">Researcher</span>()
+me = <span class="cls">Engineer</span>()
 <span class="fn">print</span>(me.greet())</code></pre>
       </div>
     </div>
@@ -149,21 +150,21 @@ me = <span class="cls">Researcher</span>()
         </div>
 
         <div class="skill-card interest-card">
-          <div class="skill-icon">📷</div>
-          <h3>Visual State Estimation &amp; Calibration under Degraded Imaging</h3>
+          <div class="skill-icon">🧭</div>
+          <h3>Robot Localization &amp; State Estimation</h3>
           <p>
-            Turning images into reliable state estimates when imaging conditions work against you:
-            harsh directional lighting, glare, eclipse, low texture, and drifting sensors.
-            I'm interested in calibration and estimation methods that degrade gracefully
-            and know when to trust what they see.
+            Working out where a robot is, and how far to trust that estimate, from noisy
+            and imperfect sensors. I'm interested in localization and sensor fusion that combine
+            cameras, IMUs, encoders, and other sensors, and that stay reliable when one of them
+            degrades, whether that's glare in orbit or snow in a field trial.
           </p>
           <ul class="interest-tags">
+            <li>Localization</li>
             <li>State Estimation</li>
-            <li>Camera Calibration</li>
             <li>Sensor Fusion</li>
-            <li>Image Processing</li>
+            <li>Sensor Calibration</li>
           </ul>
-          <p class="related-work"><span>RELATED</span><a href="#exp-ac">Acceleration Consortium</a> · <a href="#exp-msam">MSAM Lab</a></p>
+          <p class="related-work"><span>RELATED</span><a href="#exp-swap">Swap Robotics</a> · <a href="#exp-bwc">Battery Workforce</a> · <a href="#exp-ac">Acceleration Consortium</a></p>
         </div>
 
         <div class="skill-card interest-card">
@@ -269,7 +270,7 @@ me = <span class="cls">Researcher</span>()
           </div>
         </div>
 
-        <div class="timeline-item">
+        <div class="timeline-item" id="exp-bwc">
           <div class="timeline-dot"></div>
           <div class="timeline-content">
             <div class="timeline-header">
@@ -317,7 +318,7 @@ me = <span class="cls">Researcher</span>()
           </div>
         </div>
 
-        <div class="timeline-item">
+        <div class="timeline-item" id="exp-swap">
           <div class="timeline-dot"></div>
           <div class="timeline-content">
             <div class="timeline-header">
@@ -410,6 +411,7 @@ me = <span class="cls">Researcher</span>()
 
         <article
           class="project-card small"
+          id="proj-caliper"
           data-project="caliper"
           aria-label="Open encoder caliper project details"
         >
@@ -442,8 +444,8 @@ me = <span class="cls">Researcher</span>()
     <div class="container contact-container">
       <h2 class="section-title"><span class="accent">05.</span> Get In Touch</h2>
       <p class="contact-subtitle">
-        I'm applying to graduate research programs (MASc/PhD) for Fall 2027 in robotics,
-        computer vision, and space autonomy. If you supervise work in these areas or
+        I'm applying to graduate research programs (MASc) for Fall 2027 in robotics,
+        perception and localization, and space autonomy. If you supervise work in these areas or
         just want to talk research, I'd love to hear from you.
       </p>
       <a href="mailto:hmadams@uwaterloo.ca" class="btn btn-primary btn-lg">Say Hello 👋</a>
