@@ -53,23 +53,23 @@
           <span class="code-filename">portfolio.py</span>
         </div>
         <pre class="code-body"><code><span class="kw">class</span> <span class="cls">Engineer</span>:
-    <span class="kw">def</span> <span class="fn">__init__</span>(self):
-        self.name      = <span class="str">"Hunter Adams"</span>
-        self.degree    = <span class="str">"Mechatronics Engineering"</span>
-        self.interests = [
+    <span class="kw">def</span> <span class="fn">__init__</span>(<span class="slf">self</span>):
+        <span class="slf">self</span>.name      <span class="op">=</span> <span class="str">"Hunter Adams"</span>
+        <span class="slf">self</span>.degree    <span class="op">=</span> <span class="str">"Mechatronics Engineering"</span>
+        <span class="slf">self</span>.interests <span class="op">=</span> [
             <span class="str">"vision-based estimation"</span>,
             <span class="str">"robot localization"</span>,
             <span class="str">"physics-based modelling"</span>,
             <span class="str">"mechatronic systems"</span>,
             <span class="str">"autonomy in space"</span>
         ]
-        self.coffee    = <span class="num">float</span>(<span class="str">"inf"</span>)
+        <span class="slf">self</span>.coffee    <span class="op">=</span> <span class="bi">float</span>(<span class="str">"inf"</span>)
 
-    <span class="kw">def</span> <span class="fn">greet</span>(self):
+    <span class="kw">def</span> <span class="fn">greet</span>(<span class="slf">self</span>):
         <span class="kw">return</span> <span class="str">"Let's build something!"</span>
 
-me = <span class="cls">Engineer</span>()
-<span class="fn">print</span>(me.greet())</code></pre>
+me <span class="op">=</span> <span class="cls">Engineer</span>()
+<span class="bi">print</span>(me.<span class="fn">greet</span>())</code></pre>
       </div>
     </div>
   </section>

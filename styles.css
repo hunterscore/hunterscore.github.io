@@ -284,43 +284,46 @@ ul { list-style: none; }
   animation: fadeSlideUp 0.6s ease forwards 1.3s;
 }
 
+/* Code window deliberately mimics VS Code's "Dark 2026" theme
+   (theme-defaults/themes/2026-dark.json), independent of the site palette. */
 .code-block {
-  background: #041e25;
-  border: 1px solid var(--border-hi);
+  background: #121314;
+  border: 1px solid #2a2b2c;
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
 }
 
 .code-header {
-  background: #03171d;
+  background: #191a1b;
   padding: 0.75rem 1rem;
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  border-bottom: 1px solid var(--border-hi);
+  border-bottom: 1px solid #2a2b2c;
 }
 
+/* macOS window controls */
 .dot {
   width: 12px;
   height: 12px;
   border-radius: 50%;
 }
-.dot.red    { background: #d85f5f; }
-.dot.yellow { background: #d3c5cf; }
-.dot.green  { background: #7d8b6f; }
+.dot.red    { background: #ff5f57; }
+.dot.yellow { background: #febc2e; }
+.dot.green  { background: #28c840; }
 
 .code-filename {
   font-family: 'JetBrains Mono', monospace;
   font-size: 0.8rem;
-  color: var(--text-muted);
+  color: #8c8c8c;
   margin-left: auto;
 }
 
 .code-body {
   padding: 1.5rem;
   overflow-x: auto;
-  background: #041e25;
+  background: #121314;
 }
 
 .code-body code {
@@ -328,16 +331,19 @@ ul { list-style: none; }
   font-size: 0.85rem;
   line-height: 1.8;
   display: block;
-  color: var(--text);
+  color: #bbbebf;
 }
 
-/* Syntax colours (from palette) */
-.kw  { color: var(--accent-text); }
-.cls { color: var(--olive-light); }
-.fn  { color: var(--olive-light); }
-.str { color: var(--text-muted); }
-.num { color: #f0a3a3; }
-.cmt { color: #7f97a0; font-style: italic; }
+/* Dark 2026 Python token colours */
+.kw  { color: #ff7b72; } /* keyword, storage.type */
+.op  { color: #ff7b72; } /* keyword.operator */
+.cls { color: #ffa657; } /* entity.name (class) */
+.fn  { color: #d2a8ff; } /* entity.name.function */
+.bi  { color: #79c0ff; } /* support (builtins) */
+.slf { color: #79c0ff; } /* variable.language (self) */
+.str { color: #a5d6ff; } /* string */
+.num { color: #79c0ff; } /* constant.numeric */
+.cmt { color: #8b949e; } /* comment */
 
 /* ============================================================
    ABOUT
@@ -417,7 +423,7 @@ ul { list-style: none; }
 }
 
 .interests-grid {
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .research-lead {
