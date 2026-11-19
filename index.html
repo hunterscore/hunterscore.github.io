@@ -189,6 +189,107 @@ me <span class="op">=</span> <span class="cls">Engineer</span>()
     </div>
   </section>
 
+  <!-- ===== PROJECTS ===== -->
+  <section id="projects" class="section projects">
+    <div class="container">
+      <h2 class="section-title"><span class="accent">04.</span> Projects</h2>
+      <div class="projects-grid">
+
+        <article
+          class="project-card featured"
+          id="proj-tumbleweed"
+          data-project="tumbleweed"
+          aria-label="Open Tumbleweed project details"
+        >
+          <div class="project-top">
+            <span class="project-label">Featured · In Progress</span>
+            <div class="project-links">
+              <a href="https://github.com/hunterscore/tumbleweed" aria-label="GitHub repository" class="icon-link" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">Tumbleweed: Non-cooperative Satellite Pose Estimation</h3>
+          <div class="project-description">
+            <p>
+              Using Stanford's SPEED+ dataset to build and tune a computer vision and machine
+              learning model that estimates the pose of a non-cooperative spacecraft (Tango) from
+              monocular images. A keypoint heatmap maps the target's geometry and compares the relative
+              locations of its features as seen by the vision pipeline. The validated pose estimates then
+              feed a control model for satellite navigation and interception.
+            </p>
+          </div>
+          <ul class="project-tags">
+            <li>Computer Vision</li>
+            <li>Machine Learning</li>
+            <li>Pose Estimation</li>
+            <li>SPEED+</li>
+            <li>GNC</li>
+          </ul>
+        </article>
+
+        <article
+          class="project-card small"
+          id="proj-snappa"
+          data-project="snappa"
+          aria-label="Open SNAPPA project details"
+        >
+          <div class="project-top">
+            <span class="project-label">Autonomous Mobile Robot</span>
+            <div class="project-links">
+              <a href="https://github.com/hunterscore/snappa-robot" aria-label="GitHub repository" class="icon-link" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">SNAPPA: Vision-guided Navigation &amp; Pick-and-place</h3>
+          <div class="project-description">
+            <p>
+              Semi-autonomous Navigation and Actuation for Pneumatic Pick-and-place Applications.
+              A mobile robot that uses an onboard camera as its primary feedback signal: an OpenCV pipeline
+              detects the line and target, feeding PD heading control and PID wheel-speed control,
+              and a Raspberry Pi state machine sequences navigation, alignment, and pneumatic actuation.
+            </p>
+          </div>
+          <ul class="project-tags">
+            <li>Python</li>
+            <li>OpenCV</li>
+            <li>Visual Feedback Control</li>
+            <li>Raspberry Pi</li>
+            <li>Arduino</li>
+          </ul>
+        </article>
+
+        <article
+          class="project-card small"
+          id="proj-caliper"
+          data-project="caliper"
+          aria-label="Open encoder caliper project details"
+        >
+          <div class="project-top">
+            <div class="project-links">
+              <a href="https://github.com/hunterscore/encoder-caliper" aria-label="GitHub repository" class="icon-link" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">Encoder-based Caliper: Sensing &amp; Calibration</h3>
+          <p>
+            A caliper-style measurement device that pairs a 3D-printed rack-and-pinion with a rotary
+            encoder, calibrated to convert angular motion into accurate linear displacement.
+          </p>
+          <ul class="project-tags">
+            <li>Sensor Calibration</li>
+            <li>Embedded</li>
+            <li>CAD</li>
+          </ul>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+
   <!-- ===== EXPERIENCE ===== -->
   <section id="experience" class="section experience">
     <div class="container">
@@ -338,106 +439,6 @@ me <span class="op">=</span> <span class="cls">Engineer</span>()
     </div>
   </section>
 
-  <!-- ===== PROJECTS ===== -->
-  <section id="projects" class="section projects">
-    <div class="container">
-      <h2 class="section-title"><span class="accent">04.</span> Projects</h2>
-      <div class="projects-grid">
-
-        <article
-          class="project-card featured"
-          id="proj-tumbleweed"
-          data-project="tumbleweed"
-          aria-label="Open Tumbleweed project details"
-        >
-          <div class="project-top">
-            <span class="project-label">Featured · In Progress</span>
-            <div class="project-links">
-              <a href="https://github.com/hunterscore/tumbleweed" aria-label="GitHub repository" class="icon-link" target="_blank" rel="noopener">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
-              </a>
-            </div>
-          </div>
-          <h3 class="project-title">Tumbleweed: Non-cooperative Satellite Pose Estimation</h3>
-          <div class="project-description">
-            <p>
-              Using Stanford's SPEED+ dataset to build and tune a computer vision and machine
-              learning model that estimates the pose of a non-cooperative spacecraft (Tango) from
-              monocular images. A keypoint heatmap maps the target's geometry and compares the relative
-              locations of its features as seen by the vision pipeline. The validated pose estimates then
-              feed a control model for satellite navigation and interception.
-            </p>
-          </div>
-          <ul class="project-tags">
-            <li>Computer Vision</li>
-            <li>Machine Learning</li>
-            <li>Pose Estimation</li>
-            <li>SPEED+</li>
-            <li>GNC</li>
-          </ul>
-        </article>
-
-        <article
-          class="project-card small"
-          id="proj-snappa"
-          data-project="snappa"
-          aria-label="Open SNAPPA project details"
-        >
-          <div class="project-top">
-            <span class="project-label">Autonomous Mobile Robot</span>
-            <div class="project-links">
-              <a href="https://github.com/hunterscore/snappa-robot" aria-label="GitHub repository" class="icon-link" target="_blank" rel="noopener">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
-              </a>
-            </div>
-          </div>
-          <h3 class="project-title">SNAPPA: Vision-guided Navigation &amp; Pick-and-place</h3>
-          <div class="project-description">
-            <p>
-              Semi-autonomous Navigation and Actuation for Pneumatic Pick-and-place Applications.
-              A mobile robot that uses an onboard camera as its primary feedback signal: an OpenCV pipeline
-              detects the line and target, feeding PD heading control and PID wheel-speed control,
-              and a Raspberry Pi state machine sequences navigation, alignment, and pneumatic actuation.
-            </p>
-          </div>
-          <ul class="project-tags">
-            <li>Python</li>
-            <li>OpenCV</li>
-            <li>Visual Feedback Control</li>
-            <li>Raspberry Pi</li>
-            <li>Arduino</li>
-          </ul>
-        </article>
-
-        <article
-          class="project-card small"
-          id="proj-caliper"
-          data-project="caliper"
-          aria-label="Open encoder caliper project details"
-        >
-          <div class="project-top">
-            <div class="folder-icon" aria-hidden="true">📁</div>
-            <div class="project-links">
-              <a href="https://github.com/hunterscore/encoder-caliper" aria-label="GitHub repository" class="icon-link" target="_blank" rel="noopener">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
-              </a>
-            </div>
-          </div>
-          <h3 class="project-title">Encoder-based Caliper: Sensing &amp; Calibration</h3>
-          <p>
-            A caliper-style measurement device that pairs a 3D-printed rack-and-pinion with a rotary
-            encoder, calibrated to convert angular motion into accurate linear displacement.
-          </p>
-          <ul class="project-tags">
-            <li>Sensor Calibration</li>
-            <li>Embedded</li>
-            <li>CAD</li>
-          </ul>
-        </article>
-
-      </div>
-    </div>
-  </section>
 
   <!-- ===== CONTACT ===== -->
   <section id="contact" class="section contact">
